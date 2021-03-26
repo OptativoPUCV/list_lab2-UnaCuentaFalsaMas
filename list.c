@@ -50,8 +50,11 @@ return (void*)list->current->data ;
 }
 
 void * nextList(List * list) {
-
+if(list->current && list->current->next){
   return NULL;
+}
+ list->current=list->current->next;
+ return (void*)list->current->data;
 }
 
 void * lastList(List * list) {
