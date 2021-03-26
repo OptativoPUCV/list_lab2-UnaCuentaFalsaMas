@@ -40,6 +40,7 @@ List * createList() {
 
 void * firstList(List * list) {
 if(list->current==NULL || list->head==NULL){
+  printf("Entro al if \n");
 return  NULL;
 }
 list->current=list->head;
