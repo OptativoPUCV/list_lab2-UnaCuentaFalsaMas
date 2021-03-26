@@ -48,10 +48,10 @@ return NULL;
 
 void * nextList(List * list) {
 if(list->current && list->current->next){
-  return NULL;
-}
- list->current=list->current->next;
+   list->current=list->current->next;
  return (void*)list->current->data;
+}
+ return NULL;
 }
 
 void * lastList(List * list) {
