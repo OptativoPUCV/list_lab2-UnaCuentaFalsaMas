@@ -1,0 +1,16 @@
+Fri Mar 26 19:30:23 UTC 2021: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+test.c: In function ‘createList’:
+list.c:33:14: error: ‘lista’ is used uninitialized in this function [-Werror=uninitialized]
+   lista->head=NULL;
+              ^
+cc1: all warnings being treated as errors
+Compilation failed
+Fri Mar 26 19:32:25 UTC 2021: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  0|6
+total_score: 0/70
+7d89a2f
