@@ -30,8 +30,11 @@ Node * createNode(const void * data) {
 
 List * createList() {
   List* lista=(List*)malloc(sizeof(List));
+  lista->head=(Node*)malloc(sizeof(Node));
   lista->head=NULL;
+  lista->tail=(Node*)malloc(sizeof(Node));
   lista->tail=NULL;
+  lista->current=(Node*)malloc(sizeof(Node));
   lista->current=NULL;
      return lista;
 }
