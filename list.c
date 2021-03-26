@@ -40,13 +40,10 @@ List * createList() {
 
 void * firstList(List * list) {
 if(list->head){
-  printf("Entro al if \n");
-return  NULL;
-}
 list->current=list->head;
-
 return (void*)list->current->data ;
-
+}
+return NULL;
 }
 
 void * nextList(List * list) {
