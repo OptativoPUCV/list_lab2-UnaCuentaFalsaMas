@@ -39,7 +39,7 @@ List * createList() {
 
 
 void * firstList(List * list) {
-if(list->current && list->head){
+if(list->head){
   printf("Entro al if \n");
 return  NULL;
 }
