@@ -39,7 +39,7 @@ List * createList() {
 void * firstList(List * list) {
 printf("%p",list->head->data);
 
-return NULL;
+return list->head;
 
 }
 
