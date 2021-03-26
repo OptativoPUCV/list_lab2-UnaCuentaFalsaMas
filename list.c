@@ -39,7 +39,9 @@ List * createList() {
 
 
 void * firstList(List * list) {
-printf("JUan");
+if(list->head && list->head->data){
+  printf("hola\n");
+}
 
 return NULL;
 
