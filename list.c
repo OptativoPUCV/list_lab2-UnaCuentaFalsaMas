@@ -47,14 +47,18 @@ return NULL;
 }
 
 void * nextList(List * list) {
-if(list->current && list->current->next){
-   list->current=list->current->next;
- return (void*)list->current->data;
-}
+  if(list->current && list->current->next){
+    list->current=list->current->next;
+  return (void*)list->current->data;
+  }
  return NULL;
 }
 
 void * lastList(List * list) {
+  if(list->tail){
+    list->current=list->tail;
+    return (void*)list->current->data;
+  }
     return NULL;
 }
 
