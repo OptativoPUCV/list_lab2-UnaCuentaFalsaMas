@@ -31,7 +31,7 @@ Node * createNode(const void * data) {
 List * createList() {
   List* lista=(List*)malloc(sizeof(List));
   lista->head=NULL;
-  lista->head=NULL;
+  lista->tail=NULL;
   lista->current=NULL;
      return lista;
 }
@@ -39,7 +39,7 @@ List * createList() {
 void * firstList(List * list) {
 printf("%p",list->head->data);
 
-return list->head;
+return NULL;
 
 }
 
