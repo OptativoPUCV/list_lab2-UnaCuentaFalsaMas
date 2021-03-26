@@ -29,18 +29,17 @@ Node * createNode(const void * data) {
 }
 
 List * createList() {
-  List* lista=(List*)malloc(sizeof(List));
-  lista->head=(Node*)malloc(sizeof(Node));
-  lista->head=NULL;
-  lista->tail=(Node*)malloc(sizeof(Node));
-  lista->tail=NULL;
-  lista->current=(Node*)malloc(sizeof(Node));
-  lista->current=NULL;
-     return lista;
+    List * new = (List *)malloc(sizeof(List));
+    assert(new != NULL);
+    new->head = NULL;
+    new->current = NULL;
+    new->tail = NULL;
+    return new;
 }
 
+
 void * firstList(List * list) {
-printf("%p",list->head->data);
+printf("JUan");
 
 return NULL;
 
