@@ -78,7 +78,9 @@ void pushFront(List * list, const void * data) {
     list->head=aux;
   return (void)list->head->data;
   }
-  return (void)NULL;
+  Node* aux=createNode(data);
+  list->head=aux;
+  return (void)list->head->data;
 }
 
 void pushBack(List * list, const void * data) {
