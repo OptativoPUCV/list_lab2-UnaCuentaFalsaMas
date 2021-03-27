@@ -80,6 +80,7 @@ void pushFront(List * list, const void * data) {
   }
   Node* aux=createNode(data);
   list->head=aux;
+  list->tail=aux;
   return (void)list->head->data;
 }
 
