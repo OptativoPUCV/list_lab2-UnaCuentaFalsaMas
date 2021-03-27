@@ -99,6 +99,7 @@ void pushCurrent(List * list, const void * data) {
       list->current->next=aux;
     }
     else{
+      list->current->next=aux;
       list->tail=aux;
     }
   }
